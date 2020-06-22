@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="workcube_destekpatentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="COMPANY">
+          <Key>
+            <PropertyRef Name="COMPANY_ID" />
+          </Key>
+          <Property Name="COMPANY_STATUS" Type="bit" Nullable="false" />
+          <Property Name="COMPANYCAT_ID" Type="int" />
+          <Property Name="COMPANY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OUR_COMPANY_ID" Type="int" />
+          <Property Name="MEMBER_CODE" Type="nvarchar" MaxLength="50" />
+          <Property Name="PARTNER_ID" Type="int" />
+          <Property Name="DISCOUNT" Type="int" />
+          <Property Name="POS_CODE" Type="int" />
+          <Property Name="MANAGER_PARTNER_ID" Type="int" />
+          <Property Name="NICKNAME" Type="nvarchar" MaxLength="150" />
+          <Property Name="FULLNAME" Type="nvarchar" MaxLength="400" />
+          <Property Name="SECTOR_CAT_ID" Type="int" />
+          <Property Name="COMPANY_SIZE_CAT_ID" Type="int" />
+          <Property Name="COMPANY_VALUE_ID" Type="int" />
+          <Property Name="TAXOFFICE" Type="nvarchar" MaxLength="50" />
+          <Property Name="TAXNO" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_EMAIL" Type="nvarchar" MaxLength="100" />
+          <Property Name="HOMEPAGE" Type="nvarchar" MaxLength="80" />
+          <Property Name="COMPANY_TELCODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_TEL1" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_TEL2" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_TEL3" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_FAX" Type="nvarchar" MaxLength="43" />
+          <Property Name="MOBIL_CODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="MOBILTEL" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_POSTCODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="COMPANY_ADDRESS" Type="nvarchar" MaxLength="500" />
+          <Property Name="DUKKAN_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAIN_STREET" Type="nvarchar" MaxLength="50" />
+          <Property Name="STREET" Type="nvarchar" MaxLength="50" />
+          <Property Name="DISTRICT_ID" Type="int" />
+          <Property Name="SEMT" Type="nvarchar" MaxLength="50" />
+          <Property Name="COUNTY" Type="int" />
+          <Property Name="CITY" Type="int" />
+          <Property Name="COUNTRY" Type="int" />
+          <Property Name="RESOURCE_ID" Type="int" />
+          <Property Name="ISPOTANTIAL" Type="bit" />
+          <Property Name="HIERARCHY_ID" Type="int" />
+          <Property Name="SALES_COUNTY" Type="int" />
+          <Property Name="IS_BUYER" Type="bit" />
+          <Property Name="IS_SELLER" Type="bit" />
+          <Property Name="PERIOD_ID" Type="int" />
+          <Property Name="COMPANY_RATE" Type="float" />
+          <Property Name="RISK_LIMIT" Type="float" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="ORG_START_DATE" Type="datetime" />
+          <Property Name="OZEL_KOD" Type="nvarchar" MaxLength="75" />
+          <Property Name="OZEL_KOD_1" Type="nvarchar" MaxLength="75" />
+          <Property Name="OZEL_KOD_2" Type="nvarchar" MaxLength="75" />
+          <Property Name="IMS_CODE_ID" Type="int" />
+          <Property Name="COMPANY_STATE" Type="int" />
+          <Property Name="COMPANY_FAX_CODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="CON_CLOSE_DATE" Type="datetime" />
+          <Property Name="CON_OPEN_DATE" Type="datetime" />
+          <Property Name="OLD_COMPANY_ID" Type="int" />
+          <Property Name="DISTRICT" Type="nvarchar" MaxLength="50" />
+          <Property Name="DUTY_PERIOD" Type="int" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="ENDORSE_CURRENCY" Type="nvarchar" MaxLength="43" />
+          <Property Name="ENDORSE_PAYMENT" Type="float" />
+          <Property Name="ENDORSE_PERIOD" Type="int" />
+          <Property Name="STOCK_AMOUNT" Type="int" />
+          <Property Name="REF_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="MONEY_CURRENCY" Type="nvarchar" MaxLength="43" />
+          <Property Name="GRUP_RISK_LIMIT" Type="float" />
+          <Property Name="GUESS_ENDORSEMENT_MONEY" Type="nvarchar" MaxLength="43" />
+          <Property Name="GUESS_ENDORSEMENT" Type="float" />
+          <Property Name="IS_RELATED_COMPANY" Type="bit" />
+          <Property Name="COMPANY_WORK_TYPE" Type="int" />
+          <Property Name="ASSET_FILE_NAME1" Type="nvarchar" MaxLength="150" />
+          <Property Name="ASSET_FILE_NAME1_SERVER_ID" Type="int" />
+          <Property Name="ASSET_FILE_NAME2" Type="nvarchar" MaxLength="150" />
+          <Property Name="ASSET_FILE_NAME2_SERVER_ID" Type="int" />
+          <Property Name="EKSTRE" Type="bit" />
+          <Property Name="MEMBER_ADD_OPTION_ID" Type="int" />
+          <Property Name="WRK_ID" Type="nvarchar" MaxLength="43" />
+          <Property Name="GLNCODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="RECORD_PAR" Type="int" />
+          <Property Name="RECORD_DATE" Type="datetime" />
+          <Property Name="RECORD_EMP" Type="int" />
+          <Property Name="RECORD_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_PAR" Type="int" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="UPDATE_EMP" Type="int" />
+          <Property Name="UPDATE_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="COORDINATE_1" Type="nvarchar" MaxLength="50" />
+          <Property Name="COORDINATE_2" Type="nvarchar" MaxLength="50" />
+          <Property Name="CAMPAIGN_ID" Type="int" />
+          <Property Name="MULTIPLE_SECTOR_CAT_ID" Type="nvarchar" MaxLength="250" />
+          <Property Name="FIRM_TYPE" Type="nvarchar" MaxLength="250" />
+          <Property Name="DOMESTIC_VALUE_ID" Type="int" />
+          <Property Name="EXPORT_VALUE_ID" Type="int" />
+          <Property Name="COMPANY_DETAIL" Type="nvarchar" MaxLength="1500" />
+          <Property Name="SORT" Type="int" />
+          <Property Name="IS_HOMEPAGE" Type="bit" />
+          <Property Name="COMPANY_DETAIL_ENG" Type="nvarchar" MaxLength="1500" />
+          <Property Name="COMPANY_DETAIL_SPA" Type="nvarchar" MaxLength="1500" />
+          <Property Name="IS_EXPORT" Type="bit" />
+          <Property Name="VISIT_CAT_ID" Type="int" />
+          <Property Name="AREA_DEFINITION_ID" Type="int" />
+          <Property Name="TRADE_REGISTER_NUMBER" Type="nvarchar" MaxLength="50" />
+          <Property Name="NATIONALITY_ID" Type="int" />
+          <Property Name="UPPER_COMPANY_ID" Type="int" />
+          <Property Name="USE_EFATURA" Type="bit" />
+          <Property Name="EFATURA_DATE" Type="datetime" />
+          <Property Name="PROFILE_ID" Type="nvarchar" MaxLength="50" />
+          <Property Name="IS_PERSON" Type="bit" Nullable="false" />
+          <Property Name="USE_EARCHIVE" Type="bit" />
+          <Property Name="EARCHIVE_SENDING_TYPE" Type="bit" />
+          <Property Name="COMPANY_PHONE1" Type="nvarchar" MaxLength="86" StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_PHONE2" Type="nvarchar" MaxLength="86" StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_PHONE3" Type="nvarchar" MaxLength="86" StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_MOBILE" Type="nvarchar" MaxLength="86" StoreGeneratedPattern="Computed" />
+          <Property Name="IS_TARGET" Type="bit" />
+        </EntityType>
+        <EntityType Name="EMPLOYEES">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_STATUS" Type="bit" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EMPAPP_ID" Type="int" />
+          <Property Name="MEMBER_CODE" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYEE_USERNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYEE_PASSWORD" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYEE_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYEE_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EMPLOYEE_SURNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TASK" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMPLOYEE_EMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="IMCAT_ID" Type="int" />
+          <Property Name="IM" Type="nvarchar" MaxLength="50" />
+          <Property Name="IMCAT2_ID" Type="int" />
+          <Property Name="IM2" Type="nvarchar" MaxLength="50" />
+          <Property Name="DIRECT_TELCODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="DIRECT_TEL" Type="nvarchar" MaxLength="43" />
+          <Property Name="EXTENSION" Type="nvarchar" MaxLength="43" />
+          <Property Name="MOBILCODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="MOBILTEL" Type="nvarchar" MaxLength="43" />
+          <Property Name="CORBUS_TEL" Type="nvarchar" MaxLength="43" />
+          <Property Name="PHOTO" Type="nvarchar" MaxLength="500" />
+          <Property Name="IS_AGENDA_OPEN" Type="bit" />
+          <Property Name="PERIOD_ID" Type="int" />
+          <Property Name="COMPANY_ID" Type="int" />
+          <Property Name="IS_IP_CONTROL" Type="bit" />
+          <Property Name="IP_ADDRESS" Type="nvarchar" MaxLength="50" />
+          <Property Name="COMPUTER_NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="GROUP_STARTDATE" Type="datetime" />
+          <Property Name="DYNAMIC_HIERARCHY" Type="nvarchar" MaxLength="200" />
+          <Property Name="DYNAMIC_HIERARCHY_ADD" Type="nvarchar" MaxLength="50" />
+          <Property Name="HIERARCHY" Type="nvarchar" MaxLength="50" />
+          <Property Name="OZEL_KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="RECORD_DATE" Type="datetime" />
+          <Property Name="RECORD_EMP" Type="int" />
+          <Property Name="RECORD_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="UPDATE_EMP" Type="int" />
+          <Property Name="UPDATE_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="OZEL_KOD2" Type="nvarchar" MaxLength="50" />
+          <Property Name="KIDEM_DATE" Type="datetime" />
+          <Property Name="IZIN_DATE" Type="datetime" />
+          <Property Name="IN_COMPANY_REASON_ID" Type="int" />
+          <Property Name="IS_CRITICAL" Type="bit" />
+          <Property Name="PHOTO_SERVER_ID" Type="int" />
+          <Property Name="EXPIRY_DATE" Type="datetime" />
+          <Property Name="EMPLOYEE_STAGE" Type="int" />
+          <Property Name="BIOGRAPHY" Type="nvarchar" MaxLength="1000" />
+          <Property Name="WET_SIGNATURE" Type="ntext" />
+          <Property Name="PER_ASSIGN_ID" Type="int" />
+          <Property Name="IS_ACC_INFO" Type="bit" />
+          <Property Name="IZIN_DAYS" Type="float" />
+          <Property Name="ActiveDirectoryId" Type="nvarchar" MaxLength="50" />
+          <Property Name="ActiveDirectoryUID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="SETUP_CITY">
+          <Key>
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="CITY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CITY_NAME" Type="nvarchar" MaxLength="43" />
+          <Property Name="PHONE_CODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="PLATE_CODE" Type="nvarchar" MaxLength="43" />
+          <Property Name="COUNTRY_ID" Type="int" />
+          <Property Name="RECORD_DATE" Type="datetime" />
+          <Property Name="RECORD_EMP" Type="int" />
+          <Property Name="RECORD_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="UPDATE_EMP" Type="int" />
+          <Property Name="UPDATE_IP" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRIORITY" Type="int" />
+        </EntityType>
+        <EntityType Name="SETUP_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USER_NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_PASSWORD" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_EMAIL" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_ROLE" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_COMPANY" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="workcube_destekpatentModelStoreContainer">
+          <EntitySet Name="COMPANY" EntityType="Self.COMPANY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPLOYEES" EntityType="Self.EMPLOYEES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SETUP_CITY" EntityType="Self.SETUP_CITY" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SETUP_USER" EntityType="Self.SETUP_USER" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="workcube_destekpatentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="COMPANY">
+          <Key>
+            <PropertyRef Name="COMPANY_ID" />
+          </Key>
+          <Property Name="COMPANY_STATUS" Type="Boolean" Nullable="false" />
+          <Property Name="COMPANYCAT_ID" Type="Int32" />
+          <Property Name="COMPANY_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OUR_COMPANY_ID" Type="Int32" />
+          <Property Name="MEMBER_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PARTNER_ID" Type="Int32" />
+          <Property Name="DISCOUNT" Type="Int32" />
+          <Property Name="POS_CODE" Type="Int32" />
+          <Property Name="MANAGER_PARTNER_ID" Type="Int32" />
+          <Property Name="NICKNAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="FULLNAME" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="SECTOR_CAT_ID" Type="Int32" />
+          <Property Name="COMPANY_SIZE_CAT_ID" Type="Int32" />
+          <Property Name="COMPANY_VALUE_ID" Type="Int32" />
+          <Property Name="TAXOFFICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TAXNO" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HOMEPAGE" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_TELCODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_TEL1" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_TEL2" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_TEL3" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_FAX" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="MOBIL_CODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="MOBILTEL" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_POSTCODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_ADDRESS" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="DUKKAN_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MAIN_STREET" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="STREET" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DISTRICT_ID" Type="Int32" />
+          <Property Name="SEMT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COUNTY" Type="Int32" />
+          <Property Name="CITY" Type="Int32" />
+          <Property Name="COUNTRY" Type="Int32" />
+          <Property Name="RESOURCE_ID" Type="Int32" />
+          <Property Name="ISPOTANTIAL" Type="Boolean" />
+          <Property Name="HIERARCHY_ID" Type="Int32" />
+          <Property Name="SALES_COUNTY" Type="Int32" />
+          <Property Name="IS_BUYER" Type="Boolean" />
+          <Property Name="IS_SELLER" Type="Boolean" />
+          <Property Name="PERIOD_ID" Type="Int32" />
+          <Property Name="COMPANY_RATE" Type="Double" />
+          <Property Name="RISK_LIMIT" Type="Double" />
+          <Property Name="START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="ORG_START_DATE" Type="DateTime" Precision="3" />
+          <Property Name="OZEL_KOD" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Name="OZEL_KOD_1" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Name="OZEL_KOD_2" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Name="IMS_CODE_ID" Type="Int32" />
+          <Property Name="COMPANY_STATE" Type="Int32" />
+          <Property Name="COMPANY_FAX_CODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="CON_CLOSE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CON_OPEN_DATE" Type="DateTime" Precision="3" />
+          <Property Name="OLD_COMPANY_ID" Type="Int32" />
+          <Property Name="DISTRICT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DUTY_PERIOD" Type="Int32" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ENDORSE_CURRENCY" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="ENDORSE_PAYMENT" Type="Double" />
+          <Property Name="ENDORSE_PERIOD" Type="Int32" />
+          <Property Name="STOCK_AMOUNT" Type="Int32" />
+          <Property Name="REF_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MONEY_CURRENCY" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="GRUP_RISK_LIMIT" Type="Double" />
+          <Property Name="GUESS_ENDORSEMENT_MONEY" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="GUESS_ENDORSEMENT" Type="Double" />
+          <Property Name="IS_RELATED_COMPANY" Type="Boolean" />
+          <Property Name="COMPANY_WORK_TYPE" Type="Int32" />
+          <Property Name="ASSET_FILE_NAME1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ASSET_FILE_NAME1_SERVER_ID" Type="Int32" />
+          <Property Name="ASSET_FILE_NAME2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ASSET_FILE_NAME2_SERVER_ID" Type="Int32" />
+          <Property Name="EKSTRE" Type="Boolean" />
+          <Property Name="MEMBER_ADD_OPTION_ID" Type="Int32" />
+          <Property Name="WRK_ID" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="GLNCODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="RECORD_PAR" Type="Int32" />
+          <Property Name="RECORD_DATE" Type="DateTime" Precision="3" />
+          <Property Name="RECORD_EMP" Type="Int32" />
+          <Property Name="RECORD_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_PAR" Type="Int32" />
+          <Property Name="UPDATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATE_EMP" Type="Int32" />
+          <Property Name="UPDATE_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COORDINATE_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COORDINATE_2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CAMPAIGN_ID" Type="Int32" />
+          <Property Name="MULTIPLE_SECTOR_CAT_ID" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="FIRM_TYPE" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DOMESTIC_VALUE_ID" Type="Int32" />
+          <Property Name="EXPORT_VALUE_ID" Type="Int32" />
+          <Property Name="COMPANY_DETAIL" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="SORT" Type="Int32" />
+          <Property Name="IS_HOMEPAGE" Type="Boolean" />
+          <Property Name="COMPANY_DETAIL_ENG" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="COMPANY_DETAIL_SPA" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+          <Property Name="IS_EXPORT" Type="Boolean" />
+          <Property Name="VISIT_CAT_ID" Type="Int32" />
+          <Property Name="AREA_DEFINITION_ID" Type="Int32" />
+          <Property Name="TRADE_REGISTER_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NATIONALITY_ID" Type="Int32" />
+          <Property Name="UPPER_COMPANY_ID" Type="Int32" />
+          <Property Name="USE_EFATURA" Type="Boolean" />
+          <Property Name="EFATURA_DATE" Type="DateTime" Precision="3" />
+          <Property Name="PROFILE_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IS_PERSON" Type="Boolean" Nullable="false" />
+          <Property Name="USE_EARCHIVE" Type="Boolean" />
+          <Property Name="EARCHIVE_SENDING_TYPE" Type="Boolean" />
+          <Property Name="COMPANY_PHONE1" Type="String" MaxLength="86" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_PHONE2" Type="String" MaxLength="86" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_PHONE3" Type="String" MaxLength="86" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="COMPANY_MOBILE" Type="String" MaxLength="86" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="IS_TARGET" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="ERPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="COMPANY" EntityType="Self.COMPANY" />
+          <EntitySet Name="SETUP_CITY" EntityType="workcube_destekpatentModel.SETUP_CITY" />
+          <EntitySet Name="EMPLOYEES" EntityType="workcube_destekpatentModel.EMPLOYEES" />
+          <EntitySet Name="SETUP_USER" EntityType="workcube_destekpatentModel.SETUP_USER" />
+        </EntityContainer>
+        <EntityType Name="SETUP_CITY">
+          <Key>
+            <PropertyRef Name="CITY_ID" />
+          </Key>
+          <Property Name="CITY_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CITY_NAME" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="PHONE_CODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="PLATE_CODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="COUNTRY_ID" Type="Int32" />
+          <Property Name="RECORD_DATE" Type="DateTime" Precision="3" />
+          <Property Name="RECORD_EMP" Type="Int32" />
+          <Property Name="RECORD_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATE_EMP" Type="Int32" />
+          <Property Name="UPDATE_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRIORITY" Type="Int32" />
+        </EntityType>
+        <EntityType Name="EMPLOYEES">
+          <Key>
+            <PropertyRef Name="EMPLOYEE_ID" />
+          </Key>
+          <Property Name="EMPLOYEE_STATUS" Type="Boolean" Nullable="false" />
+          <Property Name="EMPLOYEE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EMPAPP_ID" Type="Int32" />
+          <Property Name="MEMBER_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_SURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TASK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EMPLOYEE_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IMCAT_ID" Type="Int32" />
+          <Property Name="IM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IMCAT2_ID" Type="Int32" />
+          <Property Name="IM2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DIRECT_TELCODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="DIRECT_TEL" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="EXTENSION" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="MOBILCODE" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="MOBILTEL" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="CORBUS_TEL" Type="String" MaxLength="43" FixedLength="false" Unicode="true" />
+          <Property Name="PHOTO" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="IS_AGENDA_OPEN" Type="Boolean" />
+          <Property Name="PERIOD_ID" Type="Int32" />
+          <Property Name="COMPANY_ID" Type="Int32" />
+          <Property Name="IS_IP_CONTROL" Type="Boolean" />
+          <Property Name="IP_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="COMPUTER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GROUP_STARTDATE" Type="DateTime" Precision="3" />
+          <Property Name="DYNAMIC_HIERARCHY" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="DYNAMIC_HIERARCHY_ADD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HIERARCHY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OZEL_KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RECORD_DATE" Type="DateTime" Precision="3" />
+          <Property Name="RECORD_EMP" Type="Int32" />
+          <Property Name="RECORD_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UPDATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATE_EMP" Type="Int32" />
+          <Property Name="UPDATE_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OZEL_KOD2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KIDEM_DATE" Type="DateTime" Precision="3" />
+          <Property Name="IZIN_DATE" Type="DateTime" Precision="3" />
+          <Property Name="IN_COMPANY_REASON_ID" Type="Int32" />
+          <Property Name="IS_CRITICAL" Type="Boolean" />
+          <Property Name="PHOTO_SERVER_ID" Type="Int32" />
+          <Property Name="EXPIRY_DATE" Type="DateTime" Precision="3" />
+          <Property Name="EMPLOYEE_STAGE" Type="Int32" />
+          <Property Name="BIOGRAPHY" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="WET_SIGNATURE" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PER_ASSIGN_ID" Type="Int32" />
+          <Property Name="IS_ACC_INFO" Type="Boolean" />
+          <Property Name="IZIN_DAYS" Type="Double" />
+          <Property Name="ActiveDirectoryId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ActiveDirectoryUID" Type="Guid" />
+        </EntityType>
+        <EntityType Name="SETUP_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USER_PASSWORD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USER_EMAIL" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USER_ROLE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="USER_COMPANY" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="workcube_destekpatentModelStoreContainer" CdmEntityContainer="ERPEntities">
+          <EntitySetMapping Name="COMPANY">
+            <EntityTypeMapping TypeName="workcube_destekpatentModel.COMPANY">
+              <MappingFragment StoreEntitySet="COMPANY">
+                <ScalarProperty Name="COMPANY_STATUS" ColumnName="COMPANY_STATUS" />
+                <ScalarProperty Name="COMPANYCAT_ID" ColumnName="COMPANYCAT_ID" />
+                <ScalarProperty Name="COMPANY_ID" ColumnName="COMPANY_ID" />
+                <ScalarProperty Name="OUR_COMPANY_ID" ColumnName="OUR_COMPANY_ID" />
+                <ScalarProperty Name="MEMBER_CODE" ColumnName="MEMBER_CODE" />
+                <ScalarProperty Name="PARTNER_ID" ColumnName="PARTNER_ID" />
+                <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+                <ScalarProperty Name="POS_CODE" ColumnName="POS_CODE" />
+                <ScalarProperty Name="MANAGER_PARTNER_ID" ColumnName="MANAGER_PARTNER_ID" />
+                <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+                <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+                <ScalarProperty Name="SECTOR_CAT_ID" ColumnName="SECTOR_CAT_ID" />
+                <ScalarProperty Name="COMPANY_SIZE_CAT_ID" ColumnName="COMPANY_SIZE_CAT_ID" />
+                <ScalarProperty Name="COMPANY_VALUE_ID" ColumnName="COMPANY_VALUE_ID" />
+                <ScalarProperty Name="TAXOFFICE" ColumnName="TAXOFFICE" />
+                <ScalarProperty Name="TAXNO" ColumnName="TAXNO" />
+                <ScalarProperty Name="COMPANY_EMAIL" ColumnName="COMPANY_EMAIL" />
+                <ScalarProperty Name="HOMEPAGE" ColumnName="HOMEPAGE" />
+                <ScalarProperty Name="COMPANY_TELCODE" ColumnName="COMPANY_TELCODE" />
+                <ScalarProperty Name="COMPANY_TEL1" ColumnName="COMPANY_TEL1" />
+                <ScalarProperty Name="COMPANY_TEL2" ColumnName="COMPANY_TEL2" />
+                <ScalarProperty Name="COMPANY_TEL3" ColumnName="COMPANY_TEL3" />
+                <ScalarProperty Name="COMPANY_FAX" ColumnName="COMPANY_FAX" />
+                <ScalarProperty Name="MOBIL_CODE" ColumnName="MOBIL_CODE" />
+                <ScalarProperty Name="MOBILTEL" ColumnName="MOBILTEL" />
+                <ScalarProperty Name="COMPANY_POSTCODE" ColumnName="COMPANY_POSTCODE" />
+                <ScalarProperty Name="COMPANY_ADDRESS" ColumnName="COMPANY_ADDRESS" />
+                <ScalarProperty Name="DUKKAN_NO" ColumnName="DUKKAN_NO" />
+                <ScalarProperty Name="MAIN_STREET" ColumnName="MAIN_STREET" />
+                <ScalarProperty Name="STREET" ColumnName="STREET" />
+                <ScalarProperty Name="DISTRICT_ID" ColumnName="DISTRICT_ID" />
+                <ScalarProperty Name="SEMT" ColumnName="SEMT" />
+                <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="RESOURCE_ID" ColumnName="RESOURCE_ID" />
+                <ScalarProperty Name="ISPOTANTIAL" ColumnName="ISPOTANTIAL" />
+                <ScalarProperty Name="HIERARCHY_ID" ColumnName="HIERARCHY_ID" />
+                <ScalarProperty Name="SALES_COUNTY" ColumnName="SALES_COUNTY" />
+                <ScalarProperty Name="IS_BUYER" ColumnName="IS_BUYER" />
+                <ScalarProperty Name="IS_SELLER" ColumnName="IS_SELLER" />
+                <ScalarProperty Name="PERIOD_ID" ColumnName="PERIOD_ID" />
+                <ScalarProperty Name="COMPANY_RATE" ColumnName="COMPANY_RATE" />
+                <ScalarProperty Name="RISK_LIMIT" ColumnName="RISK_LIMIT" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="ORG_START_DATE" ColumnName="ORG_START_DATE" />
+                <ScalarProperty Name="OZEL_KOD" ColumnName="OZEL_KOD" />
+                <ScalarProperty Name="OZEL_KOD_1" ColumnName="OZEL_KOD_1" />
+                <ScalarProperty Name="OZEL_KOD_2" ColumnName="OZEL_KOD_2" />
+                <ScalarProperty Name="IMS_CODE_ID" ColumnName="IMS_CODE_ID" />
+                <ScalarProperty Name="COMPANY_STATE" ColumnName="COMPANY_STATE" />
+                <ScalarProperty Name="COMPANY_FAX_CODE" ColumnName="COMPANY_FAX_CODE" />
+                <ScalarProperty Name="CON_CLOSE_DATE" ColumnName="CON_CLOSE_DATE" />
+                <ScalarProperty Name="CON_OPEN_DATE" ColumnName="CON_OPEN_DATE" />
+                <ScalarProperty Name="OLD_COMPANY_ID" ColumnName="OLD_COMPANY_ID" />
+                <ScalarProperty Name="DISTRICT" ColumnName="DISTRICT" />
+                <ScalarProperty Name="DUTY_PERIOD" ColumnName="DUTY_PERIOD" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="ENDORSE_CURRENCY" ColumnName="ENDORSE_CURRENCY" />
+                <ScalarProperty Name="ENDORSE_PAYMENT" ColumnName="ENDORSE_PAYMENT" />
+                <ScalarProperty Name="ENDORSE_PERIOD" ColumnName="ENDORSE_PERIOD" />
+                <ScalarProperty Name="STOCK_AMOUNT" ColumnName="STOCK_AMOUNT" />
+                <ScalarProperty Name="REF_NO" ColumnName="REF_NO" />
+                <ScalarProperty Name="MONEY_CURRENCY" ColumnName="MONEY_CURRENCY" />
+                <ScalarProperty Name="GRUP_RISK_LIMIT" ColumnName="GRUP_RISK_LIMIT" />
+                <ScalarProperty Name="GUESS_ENDORSEMENT_MONEY" ColumnName="GUESS_ENDORSEMENT_MONEY" />
+                <ScalarProperty Name="GUESS_ENDORSEMENT" ColumnName="GUESS_ENDORSEMENT" />
+                <ScalarProperty Name="IS_RELATED_COMPANY" ColumnName="IS_RELATED_COMPANY" />
+                <ScalarProperty Name="COMPANY_WORK_TYPE" ColumnName="COMPANY_WORK_TYPE" />
+                <ScalarProperty Name="ASSET_FILE_NAME1" ColumnName="ASSET_FILE_NAME1" />
+                <ScalarProperty Name="ASSET_FILE_NAME1_SERVER_ID" ColumnName="ASSET_FILE_NAME1_SERVER_ID" />
+                <ScalarProperty Name="ASSET_FILE_NAME2" ColumnName="ASSET_FILE_NAME2" />
+                <ScalarProperty Name="ASSET_FILE_NAME2_SERVER_ID" ColumnName="ASSET_FILE_NAME2_SERVER_ID" />
+                <ScalarProperty Name="EKSTRE" ColumnName="EKSTRE" />
+                <ScalarProperty Name="MEMBER_ADD_OPTION_ID" ColumnName="MEMBER_ADD_OPTION_ID" />
+                <ScalarProperty Name="WRK_ID" ColumnName="WRK_ID" />
+                <ScalarProperty Name="GLNCODE" ColumnName="GLNCODE" />
+                <ScalarProperty Name="RECORD_PAR" ColumnName="RECORD_PAR" />
+                <ScalarProperty Name="RECORD_DATE" ColumnName="RECORD_DATE" />
+                <ScalarProperty Name="RECORD_EMP" ColumnName="RECORD_EMP" />
+                <ScalarProperty Name="RECORD_IP" ColumnName="RECORD_IP" />
+                <ScalarProperty Name="UPDATE_PAR" ColumnName="UPDATE_PAR" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_EMP" ColumnName="UPDATE_EMP" />
+                <ScalarProperty Name="UPDATE_IP" ColumnName="UPDATE_IP" />
+                <ScalarProperty Name="COORDINATE_1" ColumnName="COORDINATE_1" />
+                <ScalarProperty Name="COORDINATE_2" ColumnName="COORDINATE_2" />
+                <ScalarProperty Name="CAMPAIGN_ID" ColumnName="CAMPAIGN_ID" />
+                <ScalarProperty Name="MULTIPLE_SECTOR_CAT_ID" ColumnName="MULTIPLE_SECTOR_CAT_ID" />
+                <ScalarProperty Name="FIRM_TYPE" ColumnName="FIRM_TYPE" />
+                <ScalarProperty Name="DOMESTIC_VALUE_ID" ColumnName="DOMESTIC_VALUE_ID" />
+                <ScalarProperty Name="EXPORT_VALUE_ID" ColumnName="EXPORT_VALUE_ID" />
+                <ScalarProperty Name="COMPANY_DETAIL" ColumnName="COMPANY_DETAIL" />
+                <ScalarProperty Name="SORT" ColumnName="SORT" />
+                <ScalarProperty Name="IS_HOMEPAGE" ColumnName="IS_HOMEPAGE" />
+                <ScalarProperty Name="COMPANY_DETAIL_ENG" ColumnName="COMPANY_DETAIL_ENG" />
+                <ScalarProperty Name="COMPANY_DETAIL_SPA" ColumnName="COMPANY_DETAIL_SPA" />
+                <ScalarProperty Name="IS_EXPORT" ColumnName="IS_EXPORT" />
+                <ScalarProperty Name="VISIT_CAT_ID" ColumnName="VISIT_CAT_ID" />
+                <ScalarProperty Name="AREA_DEFINITION_ID" ColumnName="AREA_DEFINITION_ID" />
+                <ScalarProperty Name="TRADE_REGISTER_NUMBER" ColumnName="TRADE_REGISTER_NUMBER" />
+                <ScalarProperty Name="NATIONALITY_ID" ColumnName="NATIONALITY_ID" />
+                <ScalarProperty Name="UPPER_COMPANY_ID" ColumnName="UPPER_COMPANY_ID" />
+                <ScalarProperty Name="USE_EFATURA" ColumnName="USE_EFATURA" />
+                <ScalarProperty Name="EFATURA_DATE" ColumnName="EFATURA_DATE" />
+                <ScalarProperty Name="PROFILE_ID" ColumnName="PROFILE_ID" />
+                <ScalarProperty Name="IS_PERSON" ColumnName="IS_PERSON" />
+                <ScalarProperty Name="USE_EARCHIVE" ColumnName="USE_EARCHIVE" />
+                <ScalarProperty Name="EARCHIVE_SENDING_TYPE" ColumnName="EARCHIVE_SENDING_TYPE" />
+                <ScalarProperty Name="COMPANY_PHONE1" ColumnName="COMPANY_PHONE1" />
+                <ScalarProperty Name="COMPANY_PHONE2" ColumnName="COMPANY_PHONE2" />
+                <ScalarProperty Name="COMPANY_PHONE3" ColumnName="COMPANY_PHONE3" />
+                <ScalarProperty Name="COMPANY_MOBILE" ColumnName="COMPANY_MOBILE" />
+                <ScalarProperty Name="IS_TARGET" ColumnName="IS_TARGET" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SETUP_CITY">
+            <EntityTypeMapping TypeName="workcube_destekpatentModel.SETUP_CITY">
+              <MappingFragment StoreEntitySet="SETUP_CITY">
+                <ScalarProperty Name="PRIORITY" ColumnName="PRIORITY" />
+                <ScalarProperty Name="UPDATE_IP" ColumnName="UPDATE_IP" />
+                <ScalarProperty Name="UPDATE_EMP" ColumnName="UPDATE_EMP" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="RECORD_IP" ColumnName="RECORD_IP" />
+                <ScalarProperty Name="RECORD_EMP" ColumnName="RECORD_EMP" />
+                <ScalarProperty Name="RECORD_DATE" ColumnName="RECORD_DATE" />
+                <ScalarProperty Name="COUNTRY_ID" ColumnName="COUNTRY_ID" />
+                <ScalarProperty Name="PLATE_CODE" ColumnName="PLATE_CODE" />
+                <ScalarProperty Name="PHONE_CODE" ColumnName="PHONE_CODE" />
+                <ScalarProperty Name="CITY_NAME" ColumnName="CITY_NAME" />
+                <ScalarProperty Name="CITY_ID" ColumnName="CITY_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYEES">
+            <EntityTypeMapping TypeName="workcube_destekpatentModel.EMPLOYEES">
+              <MappingFragment StoreEntitySet="EMPLOYEES">
+                <ScalarProperty Name="ActiveDirectoryUID" ColumnName="ActiveDirectoryUID" />
+                <ScalarProperty Name="ActiveDirectoryId" ColumnName="ActiveDirectoryId" />
+                <ScalarProperty Name="IZIN_DAYS" ColumnName="IZIN_DAYS" />
+                <ScalarProperty Name="IS_ACC_INFO" ColumnName="IS_ACC_INFO" />
+                <ScalarProperty Name="PER_ASSIGN_ID" ColumnName="PER_ASSIGN_ID" />
+                <ScalarProperty Name="WET_SIGNATURE" ColumnName="WET_SIGNATURE" />
+                <ScalarProperty Name="BIOGRAPHY" ColumnName="BIOGRAPHY" />
+                <ScalarProperty Name="EMPLOYEE_STAGE" ColumnName="EMPLOYEE_STAGE" />
+                <ScalarProperty Name="EXPIRY_DATE" ColumnName="EXPIRY_DATE" />
+                <ScalarProperty Name="PHOTO_SERVER_ID" ColumnName="PHOTO_SERVER_ID" />
+                <ScalarProperty Name="IS_CRITICAL" ColumnName="IS_CRITICAL" />
+                <ScalarProperty Name="IN_COMPANY_REASON_ID" ColumnName="IN_COMPANY_REASON_ID" />
+                <ScalarProperty Name="IZIN_DATE" ColumnName="IZIN_DATE" />
+                <ScalarProperty Name="KIDEM_DATE" ColumnName="KIDEM_DATE" />
+                <ScalarProperty Name="OZEL_KOD2" ColumnName="OZEL_KOD2" />
+                <ScalarProperty Name="UPDATE_IP" ColumnName="UPDATE_IP" />
+                <ScalarProperty Name="UPDATE_EMP" ColumnName="UPDATE_EMP" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="RECORD_IP" ColumnName="RECORD_IP" />
+                <ScalarProperty Name="RECORD_EMP" ColumnName="RECORD_EMP" />
+                <ScalarProperty Name="RECORD_DATE" ColumnName="RECORD_DATE" />
+                <ScalarProperty Name="OZEL_KOD" ColumnName="OZEL_KOD" />
+                <ScalarProperty Name="HIERARCHY" ColumnName="HIERARCHY" />
+                <ScalarProperty Name="DYNAMIC_HIERARCHY_ADD" ColumnName="DYNAMIC_HIERARCHY_ADD" />
+                <ScalarProperty Name="DYNAMIC_HIERARCHY" ColumnName="DYNAMIC_HIERARCHY" />
+                <ScalarProperty Name="GROUP_STARTDATE" ColumnName="GROUP_STARTDATE" />
+                <ScalarProperty Name="COMPUTER_NAME" ColumnName="COMPUTER_NAME" />
+                <ScalarProperty Name="IP_ADDRESS" ColumnName="IP_ADDRESS" />
+                <ScalarProperty Name="IS_IP_CONTROL" ColumnName="IS_IP_CONTROL" />
+                <ScalarProperty Name="COMPANY_ID" ColumnName="COMPANY_ID" />
+                <ScalarProperty Name="PERIOD_ID" ColumnName="PERIOD_ID" />
+                <ScalarProperty Name="IS_AGENDA_OPEN" ColumnName="IS_AGENDA_OPEN" />
+                <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+                <ScalarProperty Name="CORBUS_TEL" ColumnName="CORBUS_TEL" />
+                <ScalarProperty Name="MOBILTEL" ColumnName="MOBILTEL" />
+                <ScalarProperty Name="MOBILCODE" ColumnName="MOBILCODE" />
+                <ScalarProperty Name="EXTENSION" ColumnName="EXTENSION" />
+                <ScalarProperty Name="DIRECT_TEL" ColumnName="DIRECT_TEL" />
+                <ScalarProperty Name="DIRECT_TELCODE" ColumnName="DIRECT_TELCODE" />
+                <ScalarProperty Name="IM2" ColumnName="IM2" />
+                <ScalarProperty Name="IMCAT2_ID" ColumnName="IMCAT2_ID" />
+                <ScalarProperty Name="IM" ColumnName="IM" />
+                <ScalarProperty Name="IMCAT_ID" ColumnName="IMCAT_ID" />
+                <ScalarProperty Name="EMPLOYEE_EMAIL" ColumnName="EMPLOYEE_EMAIL" />
+                <ScalarProperty Name="TASK" ColumnName="TASK" />
+                <ScalarProperty Name="EMPLOYEE_SURNAME" ColumnName="EMPLOYEE_SURNAME" />
+                <ScalarProperty Name="EMPLOYEE_NAME" ColumnName="EMPLOYEE_NAME" />
+                <ScalarProperty Name="EMPLOYEE_NO" ColumnName="EMPLOYEE_NO" />
+                <ScalarProperty Name="EMPLOYEE_PASSWORD" ColumnName="EMPLOYEE_PASSWORD" />
+                <ScalarProperty Name="EMPLOYEE_USERNAME" ColumnName="EMPLOYEE_USERNAME" />
+                <ScalarProperty Name="MEMBER_CODE" ColumnName="MEMBER_CODE" />
+                <ScalarProperty Name="EMPAPP_ID" ColumnName="EMPAPP_ID" />
+                <ScalarProperty Name="EMPLOYEE_ID" ColumnName="EMPLOYEE_ID" />
+                <ScalarProperty Name="EMPLOYEE_STATUS" ColumnName="EMPLOYEE_STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SETUP_USER">
+            <EntityTypeMapping TypeName="workcube_destekpatentModel.SETUP_USER">
+              <MappingFragment StoreEntitySet="SETUP_USER">
+                <ScalarProperty Name="USER_COMPANY" ColumnName="USER_COMPANY" />
+                <ScalarProperty Name="USER_ROLE" ColumnName="USER_ROLE" />
+                <ScalarProperty Name="USER_EMAIL" ColumnName="USER_EMAIL" />
+                <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

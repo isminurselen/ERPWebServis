@@ -1,0 +1,125 @@
+﻿using System;
+
+
+namespace ERPWebServis.Model
+{
+    public partial class COMPANY
+    {
+        public bool COMPANY_STATUS { get; set; }
+        public Nullable<int> COMPANYCAT_ID { get; set; }
+        public int COMPANY_ID { get; set; }
+        public Nullable<int> OUR_COMPANY_ID { get; set; }
+        public string MEMBER_CODE { get; set; }
+        public Nullable<int> PARTNER_ID { get; set; }
+        public Nullable<int> DISCOUNT { get; set; }
+        public Nullable<int> POS_CODE { get; set; }
+        public Nullable<int> MANAGER_PARTNER_ID { get; set; }
+        public string NICKNAME { get; set; }
+        public string FULLNAME { get; set; }
+        public Nullable<int> SECTOR_CAT_ID { get; set; }
+        public Nullable<int> COMPANY_SIZE_CAT_ID { get; set; }
+        public Nullable<int> COMPANY_VALUE_ID { get; set; }
+        public string TAXOFFICE { get; set; }
+        public string TAXNO { get; set; }
+        public string COMPANY_EMAIL { get; set; }
+        public string HOMEPAGE { get; set; }
+        public string COMPANY_TELCODE { get; set; }
+        public string COMPANY_TEL1 { get; set; }
+        public string COMPANY_TEL2 { get; set; }
+        public string COMPANY_TEL3 { get; set; }
+        public string COMPANY_FAX { get; set; }
+        public string MOBIL_CODE { get; set; }
+        public string MOBILTEL { get; set; }
+        public string COMPANY_POSTCODE { get; set; }
+        public string COMPANY_ADDRESS { get; set; }
+        public string DUKKAN_NO { get; set; }
+        public string MAIN_STREET { get; set; }
+        public string STREET { get; set; }
+        public Nullable<int> DISTRICT_ID { get; set; }
+        public string SEMT { get; set; }
+        public Nullable<int> COUNTY { get; set; }
+        public Nullable<int> CITY { get; set; }
+        public Nullable<int> COUNTRY { get; set; }
+        public Nullable<int> RESOURCE_ID { get; set; }
+        public Nullable<bool> ISPOTANTIAL { get; set; }
+        public Nullable<int> HIERARCHY_ID { get; set; }
+        public Nullable<int> SALES_COUNTY { get; set; }
+        public Nullable<bool> IS_BUYER { get; set; }
+        public Nullable<bool> IS_SELLER { get; set; }
+        public Nullable<int> PERIOD_ID { get; set; }
+        public Nullable<double> COMPANY_RATE { get; set; }
+        public Nullable<double> RISK_LIMIT { get; set; }
+        public Nullable<System.DateTime> START_DATE { get; set; }
+        public Nullable<System.DateTime> ORG_START_DATE { get; set; }
+        public string OZEL_KOD { get; set; }
+        public string OZEL_KOD_1 { get; set; }
+        public string OZEL_KOD_2 { get; set; }
+        public Nullable<int> IMS_CODE_ID { get; set; }
+        public Nullable<int> COMPANY_STATE { get; set; }
+        public string COMPANY_FAX_CODE { get; set; }
+        public Nullable<System.DateTime> CON_CLOSE_DATE { get; set; }
+        public Nullable<System.DateTime> CON_OPEN_DATE { get; set; }
+        public Nullable<int> OLD_COMPANY_ID { get; set; }
+        public string DISTRICT { get; set; }
+        public Nullable<int> DUTY_PERIOD { get; set; }
+        public string EMAIL { get; set; }
+        public string ENDORSE_CURRENCY { get; set; }
+        public Nullable<double> ENDORSE_PAYMENT { get; set; }
+        public Nullable<int> ENDORSE_PERIOD { get; set; }
+        public Nullable<int> STOCK_AMOUNT { get; set; }
+        public string REF_NO { get; set; }
+        public string MONEY_CURRENCY { get; set; }
+        public Nullable<double> GRUP_RISK_LIMIT { get; set; }
+        public string GUESS_ENDORSEMENT_MONEY { get; set; }
+        public Nullable<double> GUESS_ENDORSEMENT { get; set; }
+        public Nullable<bool> IS_RELATED_COMPANY { get; set; }
+        public Nullable<int> COMPANY_WORK_TYPE { get; set; }
+        public string ASSET_FILE_NAME1 { get; set; }
+        public Nullable<int> ASSET_FILE_NAME1_SERVER_ID { get; set; }
+        public string ASSET_FILE_NAME2 { get; set; }
+        public Nullable<int> ASSET_FILE_NAME2_SERVER_ID { get; set; }
+        public Nullable<bool> EKSTRE { get; set; }
+        public Nullable<int> MEMBER_ADD_OPTION_ID { get; set; }
+        public string WRK_ID { get; set; }
+        public string GLNCODE { get; set; }
+        public Nullable<int> RECORD_PAR { get; set; }
+        public Nullable<System.DateTime> RECORD_DATE { get; set; }
+        public Nullable<int> RECORD_EMP { get; set; }
+        public string RECORD_IP { get; set; }
+        public Nullable<int> UPDATE_PAR { get; set; }
+        public Nullable<System.DateTime> UPDATE_DATE { get; set; }
+        public Nullable<int> UPDATE_EMP { get; set; }
+        public string UPDATE_IP { get; set; }
+        public string COORDINATE_1 { get; set; }
+        public string COORDINATE_2 { get; set; }
+        public Nullable<int> CAMPAIGN_ID { get; set; }
+        public string MULTIPLE_SECTOR_CAT_ID { get; set; }
+        public string FIRM_TYPE { get; set; }
+        public Nullable<int> DOMESTIC_VALUE_ID { get; set; }
+        public Nullable<int> EXPORT_VALUE_ID { get; set; }
+        public string COMPANY_DETAIL { get; set; }
+        public Nullable<int> SORT { get; set; }
+        public Nullable<bool> IS_HOMEPAGE { get; set; }
+        public string COMPANY_DETAIL_ENG { get; set; }
+        public string COMPANY_DETAIL_SPA { get; set; }
+        public Nullable<bool> IS_EXPORT { get; set; }
+        public Nullable<int> VISIT_CAT_ID { get; set; }
+        public Nullable<int> AREA_DEFINITION_ID { get; set; }
+        public string TRADE_REGISTER_NUMBER { get; set; }
+        public Nullable<int> NATIONALITY_ID { get; set; }
+        public Nullable<int> UPPER_COMPANY_ID { get; set; }
+        public Nullable<bool> USE_EFATURA { get; set; }
+        public Nullable<System.DateTime> EFATURA_DATE { get; set; }
+        public string PROFILE_ID { get; set; }
+        public bool IS_PERSON { get; set; }
+        public Nullable<bool> USE_EARCHIVE { get; set; }
+        public Nullable<bool> EARCHIVE_SENDING_TYPE { get; set; }
+        public string COMPANY_PHONE1 { get; set; }
+        public string COMPANY_PHONE2 { get; set; }
+        public string COMPANY_PHONE3 { get; set; }
+        public string COMPANY_MOBILE { get; set; }
+        public Nullable<bool> IS_TARGET { get; set; }
+    }
+
+
+}
